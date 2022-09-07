@@ -49,6 +49,7 @@ export default {
   gap: 20px;
 }
 input{
+  box-sizing: border-box;
   width: 200px;
   height: 40px;
   border: 0px;
@@ -56,6 +57,22 @@ input{
   border-radius: 10px;
   text-align: center;
   outline: none;
+}
+input:focus{
+  box-shadow: 4px 4px 50px 0px rgba(36, 132, 206, 6);
+  width: 240px;
+  animation-duration: 0.5s;
+  animation-name: slidein;
+  overflow: hidden;
+}
+@keyframes slidein {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 240px;
+  }
 }
 button{
   background-color: #32AB9B;

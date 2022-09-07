@@ -57,7 +57,7 @@ export default {
   created () {
     setTimeout(() => {
       this.paymentsList = this.fetchPaymentsData()
-    }, 0)
+    }, 500)
   }
 }
 </script>
